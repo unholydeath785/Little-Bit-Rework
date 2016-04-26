@@ -1,0 +1,212 @@
+.slide-menu-overlay {
+  display: none;
+  padding: 0;
+  margin: 0;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(27, 27, 27, 0.61);
+  .slide-menu-plate {
+    display: none;
+    -webkit-box-shadow: -11px 0px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: -11px 0px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: -11px 0px 2px 0px rgba(0,0,0,0.5);
+    background-color:rgb(249, 249, 249);
+    width:45%;
+    height: 623px;
+    padding: 0;
+    margin: 0;
+    float:right;
+    .slide-menu-title-container {
+      .slide-menu-title {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color:rgb(46, 99, 142);
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 17px 0;
+      }
+      .slide-menu-close {
+        @include size(25,25);
+        float:right;
+        position: absolute;
+        top:25px;
+        left:87%;
+        padding: 15px 15px 0;
+        &:hover {
+          cursor: pointer;
+          transition: transform 1s;
+          transform: scale(1.2);
+        }
+      }
+    }
+    .slide-menu-list-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color:rgb(219, 163, 16);
+    }
+
+    .slide-menu-quick-link-list {
+      list-style: none;
+      margin-top:25px;
+      padding: 0;
+      .slide-menu-quick-link-item {
+        width: 100%;
+        padding: 10px 0;
+        background-color:rgb(80, 80, 80);
+        border-top: 1px solid rgb(112, 112, 111);
+        border-bottom: 1px solid rgb(112, 112, 111);
+        color:rgb(224, 224, 224);
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        &:hover {
+          background-color:rgb(80, 80, 80) + 50;
+          cursor: pointer;
+          color:rgb(231, 245, 148);
+        }
+        img {
+          @include size(17,17);
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .slide-menu-list {
+      list-style: none;
+      margin-top: 10px;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid rgb(77, 77, 77);
+      .slide-menu-item {
+        display: flex;
+        padding-top: 15px;
+        img {
+          @include size(17,17);
+          padding-right: 10px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  float:right;
+  margin-top:35px;
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  .nav-link {
+    text-align: center;
+    margin-left:5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(55, 11, 182);
+    img {
+      @include size(17,17);
+      padding-right: 10px;
+    }
+    a {
+      text-decoration: none;
+      color:inherit;
+    }
+  }
+  #link-1 {
+    width:75px;
+    &:hover {
+      transition: border 0.25s ease-out, color 0.25s ease-out;
+      border-bottom: 2px solid black;
+      font-weight: 800;
+    }
+  }
+  #link-2 {
+    width:75px;
+    &:hover {
+      transition: border 0.25s ease-out, color 0.25s ease-out;
+      color: rgb(138, 47, 12);
+      border-bottom: 2px solid rgb(138, 47, 12);
+      font-weight: 800;
+    }
+  }
+  #link-3 {
+    width:125px;
+    &:hover {
+      transition: border 0.25s ease-out, color 0.25s ease-out;
+      color: rgb(31,192,213);
+      border-bottom: 2px solid rgb(31, 192, 213);
+      font-weight: 800;
+    }
+  }
+  #link-4 {
+    width:100px;
+    &:hover {
+      color:rgb(255, 36, 19);
+      transition: border 0.25s ease-out, color 0.25s ease-out;
+      border-bottom: 2px solid rgb(255, 36, 19);
+      font-weight: 800;
+    }
+  }
+  #link-5 {
+    width:75px;
+    &:hover {
+      transition: border 0.25s ease-out, color 0.25s ease-out;
+      color:white;
+      border-bottom: 2px solid white;
+      font-weight: 800;
+    }
+  }
+  #link-6 {
+    width:152px;
+    background-color: rbg(0,0,0,1);
+    .carrot img {
+      margin-left:10px;
+      @include size(13,13);
+    }
+    &:hover {
+      transition: border 0.2s ease-out, color 0.25s ease-out, background-color 0.25s ease-out;
+      color:white;
+      border: 1px solid white;
+      background-color: rgb(80, 80, 80);
+    }
+    .dropdown-menu-container {
+      display: none;
+      text-align: center;
+      width: 150px;
+      height: 172.25px;
+      background-color: rgb(80, 80, 80);
+      position: absolute;
+      margin-top:11px;
+      border: 1px solid white;
+      margin-left:-2px;
+      padding-right:1px;
+
+      .dropdown-menu {
+        list-style: none;
+        padding:0;
+        margin: 0;
+        .dropdown-menu-link {
+          font-weight: 300;
+          width: 100%;
+          padding: 10px 0;
+          border: 1px solid rgb(158, 158, 158);
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(80, 80, 80)+ 50;
+            color:rgb(231, 245, 148);
+          }
+        }
+      }
+    }
+  }
+}
