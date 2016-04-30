@@ -54,8 +54,8 @@ $breakpoints: (
 );
 
 @mixin breakpoint($name) {
-      @if map-has-key($breakpoints, $name) {
-        @media #{inspect(map-get($breakpoints, $name))} {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
       @content;
     }
   }

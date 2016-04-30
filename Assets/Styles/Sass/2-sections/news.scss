@@ -1,0 +1,64 @@
+.news {
+  position: absolute;
+  margin-top: 575px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  .twitter-container {
+    width:20%;
+    height: 600px;
+  }
+  .news-container {
+    display: flex;
+    width:80%;
+    height: 600px;
+    flex-wrap: wrap;
+    .news-row {
+      display: flex;
+      height: 50%;
+      width: 100%;
+      .news-article {
+        background-color: rgb(35, 160, 177);
+        height: 100%;
+        width: 25%;
+        .story-container {
+          position: absolute;
+          height: 50%;
+          width: 100%;
+          background-image: url('../../Images/social.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 1px solid black;
+          .story-info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 250px;
+            height: 50px;
+            width: 20%;
+            background-color: rgba(23, 23, 23, 0.75);
+            .story-title {
+              color:white;
+              padding-left: 50px;
+            }
+            .arrow {
+              float:right;
+              img {
+                @include size(25,25);
+              }
+            }
+            .story-info-p {
+              color:white;
+              margin: 10px 15px;
+              overflow-y: hidden;
+              display: none;
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
