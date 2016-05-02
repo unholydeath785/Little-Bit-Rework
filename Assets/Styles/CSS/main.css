@@ -109,7 +109,7 @@ section {
     height: 250px;
     width: 80px; }
 .about-container .slider-container {
-  overflow-y: hidden;
+  overflow: hidden;
   z-index: 2;
   position: relative;
   text-align: center;
@@ -118,7 +118,7 @@ section {
   display: flex; }
   .about-container .slider-container .about-slide {
     position: absolute;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: white; }
     @media (min-width: 901px) {
       .about-container .slider-container .about-slide {
@@ -248,6 +248,7 @@ section {
           position: absolute;
           height: 50%;
           width: 100%;
+          background-repeat: no-repeat;
           background-image: url("../../Images/social.svg");
           background-position: center;
           background-repeat: no-repeat;
@@ -276,6 +277,51 @@ section {
             .news .news-container .news-row .news-article .story-container .story-info:hover {
               cursor: pointer; }
 
+@media screen and (max-width: 1400px) {
+  #news-1, #news-2, #news-3 {
+    width: 33.3333333%; }
+    #news-1 .story-container .story-info, #news-2 .story-container .story-info, #news-3 .story-container .story-info {
+      width: 26.7%; }
+
+  #news-4 {
+    width: 0;
+    display: none; }
+    #news-4 .story-container {
+      display: none; } }
+@media screen and (max-width: 1000px) {
+  #news-1, #news-2 {
+    width: 50%; }
+    #news-1 .story-container .story-info, #news-2 .story-container .story-info {
+      width: 40%; }
+
+  #news-3 {
+    width: 0;
+    display: none; }
+    #news-3 .story-container {
+      display: none; } }
+@media screen and (max-width: 700px) {
+  .twitter-container {
+    display: none; }
+
+  .news-container {
+    display: block;
+    width: 100%; }
+
+  .news-article {
+    width: 100%; }
+
+  #news-1 {
+    width: 100%; }
+    #news-1 .story-container {
+      width: 100%; }
+      #news-1 .story-container .story-info {
+        width: 100%; }
+
+  #news-2, #row-2 {
+    width: 0;
+    display: none; }
+    #news-2 .story-container, #row-2 .story-container {
+      display: none; } }
 .slide-menu-overlay {
   z-index: 1;
   display: none;

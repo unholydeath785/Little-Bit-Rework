@@ -25,6 +25,7 @@
           position: absolute;
           height: 50%;
           width: 100%;
+          background-repeat: no-repeat;
           background-image: url('../../Images/social.svg');
           background-position: center;
           background-repeat: no-repeat;
@@ -59,6 +60,71 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #news-1,#news-2,#news-3 {
+    width: 33.3333333%;
+    .story-container {
+      .story-info {
+        width: 26.7%;
+      }
+    }
+  }
+  #news-4 {
+    width: 0;
+    display: none;
+    .story-container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #news-1,#news-2 {
+    width: 50%;
+    .story-container {
+      .story-info {
+        width: 40%;
+      }
+    }
+  }
+  #news-3 {
+    width: 0;
+    display: none;
+    .story-container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .twitter-container {
+    display: none;
+  }
+  .news-container {
+    display: block;
+    width: 100%;
+  }
+  .news-article {
+    width: 100%;
+  }
+  #news-1 {
+    width: 100%;
+    .story-container {
+      width: 100%;
+      .story-info {
+        width: 100%;
+      }
+    }
+  }
+  #news-2,#row-2 {
+    width: 0;
+    display: none;
+    .story-container {
+      display: none;
     }
   }
 }

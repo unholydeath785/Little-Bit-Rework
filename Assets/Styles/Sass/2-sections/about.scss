@@ -27,7 +27,7 @@
     }
   }
   .slider-container {
-    overflow-y: hidden;
+    overflow: hidden;
     z-index: 2;
     position: relative;
     text-align: center;
@@ -36,7 +36,7 @@
     display: flex;
     .about-slide {
       position: absolute;
-      overflow-y: hidden;
+      overflow: hidden;
       @media (min-width: 901px) {
         width: 33.333333%;
         position:static;
