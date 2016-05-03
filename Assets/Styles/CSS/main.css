@@ -322,6 +322,15 @@ section {
     display: none; }
     #news-2 .story-container, #row-2 .story-container {
       display: none; } }
+.options {
+  position: absolute;
+  margin-top: 1300px;
+  height: auto;
+  width: 100%;
+  color: red; }
+  .options .options-list {
+    display: flex; }
+
 .slide-menu-overlay {
   z-index: 1;
   display: none;
@@ -602,6 +611,9 @@ section {
     width: 75;
     height: 15; }
 
+@media (min-width: 1400px) {
+  .carousel-container {
+    height: 700px; } }
 div#slide-1 {
   background-image: url("../../Images/horse.jpg"); }
 
