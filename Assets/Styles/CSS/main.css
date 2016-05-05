@@ -408,8 +408,31 @@ footer {
   position: absolute;
   margin-top: 1250px;
   width: 100%;
-  height: 500px;
-  background-color: pink; }
+  height: 450px;
+  background-color: #bababa;
+  display: block; }
+  footer .footer-row {
+    text-align: center;
+    display: flex;
+    width: 100%; }
+    footer .footer-row .footer-col {
+      font-weight: 300;
+      display: flex;
+      flex-flow: column;
+      width: 16.66666666666666666666%; }
+      footer .footer-row .footer-col span {
+        padding: 7px 0; }
+        footer .footer-row .footer-col span a {
+          text-decoration: none;
+          color: black; }
+          footer .footer-row .footer-col span a:hover {
+            font-weight: 400; }
+  footer #row-2 {
+    margin-top: 10px;
+    flex-flow: column; }
+    footer #row-2 h5 {
+      color: #828282;
+      font-style: italic; }
 
 @media screen and (max-width: 894px) {
   footer {

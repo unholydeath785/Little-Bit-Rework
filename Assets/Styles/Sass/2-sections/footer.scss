@@ -2,8 +2,38 @@ footer {
   position: absolute;
   margin-top: 1250px;
   width: 100%;
-  height: 500px;
-  background-color: pink;
+  height: 450px;
+  background-color: rgb(186, 186, 186);
+  display: block;
+  .footer-row {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    .footer-col {
+      font-weight: 300;
+      display: flex;
+      flex-flow: column;
+      width: 16.66666666666666666666%;
+      span {
+        padding: 7px 0;
+        a {
+          text-decoration: none;
+          color:black;
+          &:hover {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  #row-2 {
+    margin-top:10px;
+    flex-flow: column;
+    h5 {
+      color:rgb(130, 130, 130);
+      font-style: italic;
+    }
+  }
 }
 @media screen and (max-width:894px) {
   footer {
