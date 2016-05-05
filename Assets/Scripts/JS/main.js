@@ -1,12 +1,14 @@
 $('.menu-bar').click(function () {
   $('.slide-menu-overlay').slideDown(750);
   $('.slide-menu-plate').slideDown(800);
-  $(body).css({'z-index':'-5'});
+  $('section').hide();
+  $('footer').hide();
 })
 $('.slide-menu-close').click(function () {
   $('.slide-menu-plate').slideUp(750);
   $('.slide-menu-overlay').slideUp(800);
-  $(body).css({'z-index':'0'});
+  $('section').show();
+  $('footer').show();
 })
 $('#link-6').mouseenter(function () {
   $('.dropdown-menu-container').slideDown(250);

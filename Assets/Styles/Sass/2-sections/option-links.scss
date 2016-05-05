@@ -1,10 +1,84 @@
 .options {
   position: absolute;
-  margin-top:1300px;
-  height: auto;
+  margin-top:1175px;
+  height: 75px;
   width: 100%;
-  color: red;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  @media screen and (max-width: 894px) {
+    margin-top:  875px;
+    background-color: none;
+  }
   .options-list {
-    display: flex;
+    list-style: none;
+    display: list-item;
+    background-color: rgb(50, 50, 50);
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (min-width: 895px) {
+      list-style: none;
+      margin: 0 auto;
+      height: 46px;
+      margin-top: 2px;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      li {
+        background-color: rgb(55, 55, 55);
+        margin-top: 25px;
+        text-align: center;
+        padding-top: 25px;
+        font-weight: bold;
+        width: 25%;
+        height: inherit;
+        border: 2px solid rgb(89, 89, 89);
+        &:hover {
+          cursor: pointer;
+          transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+          background-color: rgb(133, 133, 133);
+          color:rgb(16, 219, 152);
+        }
+      }
+    }
+    @media screen and (max-width:894px) {
+      li {
+        padding: 25px 5px;
+        border:2px solid rgb(173, 141, 42);
+        font-weight: bold;
+        font-size: 18px;
+        &:hover {
+          cursor: pointer;
+          transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+          background-color: rgb(133, 133, 133);
+          color:rgb(16, 219, 152);
+        }
+      }
+    }
+  }
+}
+
+.donate-icon {
+  padding-right: 10px;
+  img {
+    @include size(17,17);
+  }
+}
+.shop-icon {
+  img {
+    padding-right: 10px;
+    @include size(17,17);
+  }
+}
+.visit-icon {
+  img {
+    padding-right: 10px;
+    @include size(17,17);
+  }
+}
+.volunteer-icon {
+  img {
+    padding-right: 10px;
+    @include size(17,17);
   }
 }

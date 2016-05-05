@@ -41,7 +41,7 @@
       }
     }
 
-    @media (max-width:900px) {
+    @media screen and (max-width:900px) {
       .slide-info {
         position: absolute;
         width: 100%;
@@ -92,7 +92,7 @@
 }
 
 .carousel-buttons {
-  @media (min-width:768px) {
+  @media screen and (min-width:768px) {
     display: block;
   }
   display:none;
@@ -114,7 +114,7 @@
 
 }
 
-@media (min-width:1400px) {
+@media screen and (min-width:1400px) {
   .carousel-container {
     height: 700px;
     .slide {
